@@ -1,0 +1,267 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #eee !important;
+    font-family: 'Noto Sans JP', sans-serif !important;
+    color: #A3A5B5;
+}
+.navbar-div .navbar{
+    padding-top:5vw;
+    padding-left: 5vw;
+}
+.landing-div {
+    margin-top: 12.5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.landing-div .landing-div-header h1{
+    margin-top: 5vw;
+    font-weight: 900;
+    font-size: 7.5vw;
+    color: #12143F;
+    position: absolute;  
+}
+.landing-div .landing-div-header h4{
+    font-weight: 400;
+    margin-top: 2vw;
+    color: #5383E7;
+    letter-spacing: 1px;
+    font-size: 1.5vw;
+    position: absolute;
+}
+.landing-div .landing-div-header p{
+    font-weight: 100;
+    margin-top: 17.5vw;
+    position: absolute;
+    margin-left: .5vw;
+}
+.landing-div .btn{
+    margin-top:25vw;
+    margin-left: 1.5vw;
+    position: absolute;
+    color: #eee !important;
+    background-color: #5383E7;
+    font-weight: 400;
+    font-size: 1.5vw;
+    width: 15vw;
+    border-radius: 10vw;
+    transition: all 0.5s ease;
+    height: 4.5vw;
+}
+.landing-div .btn:hover{
+    transform: translateY(-5px);
+}
+.img-div{
+    background: url('https://images.pexels.com/photos/1164778/pexels-photo-1164778.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-size: cover;
+    border-radius: 3.5vw;
+    height: 50vw;
+    width: 35vw;
+    position: absolute;
+    margin-top: -10vw;
+    margin-left: -2.5vw;
+}
+.circle{
+    width: 0.5px;
+    height: 0.5px;
+    padding: 0.25vw;
+    background: #12143F;
+    margin-top:1.5vw;
+    margin-left:1.5vw;
+    border-radius: 100%;
+}
+.square-dot-div{
+    animation: move-up 2s infinite ease;
+    transition: all 2s ease;
+    position: absolute;
+    margin-left: -9.5vw;
+    margin-top:-15vw;
+    z-index: -2;
+    width: 17.5vw;
+}
+@keyframes move-up {
+    0%,100%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}
+.circle-cont{
+    position: absolute;
+    height: 15vw;
+    width: 15vw;
+    z-index: -2;
+    margin-top:30vw;
+    margin-left: 25vw;
+    padding:10px;
+    border-radius: 100%;
+    background:#A1B9EA;
+}
+.model-div{
+    margin-top: 55vw;
+}
+.model-div h2,h4{
+    text-align: center;
+}
+.model-div h4{
+    color: #5383E7;
+}
+.model-div h2{
+    color: #12143F;
+    font-size: 5vw;
+    font-weight: 700;
+}
+.model-div .row{
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
+    margin-top: 5vw;
+}
+.model-div .card{
+    background-color: transparent;
+    border: 0;
+    padding: 1vw;
+    border-radius: 10px;
+}
+.model-div .row .card .fa{
+    font-size: 3.5vw;
+    text-align: center;
+    margin-top: 5vw;
+    color: #12143F;
+}
+.model-div .card h5{
+    text-align: center;
+    margin-top: 2vw;
+    color: #12143F;
+}
+.model-div .card p{
+    margin-top: 1.5vw;
+    text-align: center;
+}
+.about-div{
+    margin-top: 15vw;
+}
+.about-div .col-sm-7{
+    padding-left: 15vw;
+}
+.about-div h4{
+    position: absolute;
+    color:#5383E7;
+}
+.about-div h2{
+    color: #12143F;
+    font-weight: 700;
+    margin-top: 2.5vw;
+    font-size: 3.5vw;
+}
+.about-div ul {
+    display: flex;
+    color: #12143F;
+}
+.about-div .about-list{
+    margin-top: 3.5vw;
+}
+.about-div ul li:nth-child(1){
+    margin-right: 5vw;
+}
+.about-div .btn
+{
+    width: 10vw;
+    background: #5383E7;
+    color: #eee;
+    border-radius: 10vw;
+    height: 4.5vw;
+    font-size: 1.5vw;
+    width: 15vw;
+    margin-top: 2.5vw;
+    margin-left: 2.5vw;
+    transition: all 0.5s ease;
+}
+.about-div .btn:hover{
+    transform: translateY(-5px);
+}
+.about-div .img-div-1{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 2.5vw;
+    position: absolute;
+    background: url('https://images.pexels.com/photos/1128527/pexels-photo-1128527.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-size: cover;
+    margin-left: 5vw;
+    margin-top: -5vw;
+}
+.about-div .img-div-2{
+    width: 25vw;
+    height: 25vw;
+    border-radius:3.5vw;
+    position: absolute;
+    background: url('https://images.pexels.com/photos/2224/road-people-street-smartphone.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-size: cover;
+    margin-top: 10vw;
+    margin-left: 25vw;
+}
+.user-rate-div{
+    margin-top: 30vw;
+}
+.user-rate-div h2{
+    margin-left: 5vw;
+    margin-top: 15vw;
+    color: #12143F;
+    font-size: 3.5vw;
+    font-weight: 700;
+}
+.user-rate-div h4{
+    color: #5383E7;
+    margin-left: 5vw;
+    margin-top: -2.5vw;
+    position: absolute;
+}
+.user-rate-div p{
+    margin-left: 5.5vw;
+    margin-top: 2.5vw;
+}
+.mail-div{
+    margin-top: 30vw;
+}
+.mail-div .col-sm-6:nth-child(2){
+    margin-top: 7.5vw;
+    padding-left: 5vw;
+}
+.mail-div h2{
+    color: #12143F;
+    font-size: 3.5vw;
+    font-weight: 700;
+    margin-top: 5vw;
+}
+.mail-div h4{
+    position: absolute;
+    color: #5383E7;
+}
+.mail-div p{
+    margin-top: 2vw;
+}
+.mail-img-div{
+    width: 35vw;
+    height: 45vw;
+    background: url('https://images.pexels.com/photos/5329529/pexels-photo-5329529.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    border-radius: 3.5vw;
+    background-size: cover;
+    position: absolute;
+    margin-top: -2.5vw;
+    margin-left: 10vw;
+}
+.circle-mail{
+    position: absolute;
+    height: 15vw;
+    width: 15vw;
+    background: #A1B9EA;
+    margin-top: 30vw;
+    border-radius: 100%;
+    z-index: -1;
+    margin-left: 35vw;
+}
