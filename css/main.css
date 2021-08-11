@@ -586,6 +586,7 @@ body{
     }
     .mail-div .col-sm-6:nth-child(2){
         margin-top: 25vw;
+        margin-left: 2.5vw;
     }
     .mail-div .col-sm-6:nth-child(2) h2{
         font-size: 5vw;
