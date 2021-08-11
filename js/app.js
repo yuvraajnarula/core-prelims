@@ -27,11 +27,11 @@ imgQuote1.classList.add('img-quote-1');
 imgQuote2.classList.add('img-quote-2');
 imgQuote1.innerHTML = 
 `
-    <p> Lorem ipsum dolor sit amet consectetur </p>
+    <p> Lorem ipsum dolor <br> sit amet consectetur </p>
 `;
 imgQuote2.innerHTML = 
 `
-    <p> Lorem ipsum dolor sit amet consectetur </p>
+    <p> Lorem ipsum dolor <br> sit amet consectetur </p>
 `;
 aboutContainer.appendChild(imgQuote1);
 aboutContainer.appendChild(imgQuote2);
@@ -135,7 +135,7 @@ const swiper = new Swiper('.swiper-container', {
         occupation: 'Writer'
     },
     {
-        name : 'Nathaline Smith',
+        name : 'Sasha Blouse',
         img  : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn22JI-p42tWtr24yyGfRxA1E2lDY_yihhEQ&usqp=CAU',
         review :      
         `

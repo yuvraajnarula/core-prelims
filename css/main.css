@@ -15,6 +15,9 @@ body{
     padding-top:5vw;
     padding-left: 5vw;
 }
+.navbar-nav{
+    margin-left: 65vw;
+}
 .landing-div {
     margin-top: 12.5vw;
     padding-left: 5vw;
@@ -36,7 +39,7 @@ body{
     position: absolute;
 }
 .landing-div .landing-div-header p{
-    font-weight: 100;
+    font-weight: 300;
     margin-top: 17.5vw;
     position: absolute;
     margin-left: .5vw;
@@ -73,11 +76,6 @@ body{
     padding: 0.25vw;
     background: #12143F;
     margin-top:1.5vw;
-
-
-
-
-
     margin-left:1.5vw;
     border-radius: 100%;
 }
@@ -198,6 +196,8 @@ body{
     position: absolute;
     background: url('https://images.pexels.com/photos/1128527/pexels-photo-1128527.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
     background-size: cover;
+    box-shadow:  20px 20px 60px #c1c1c1,
+             -20px -20px 60px #ffffff;
     margin-left: 5vw;
     margin-top: -5vw;
 }
@@ -208,6 +208,8 @@ body{
     position: absolute;
     background: url('https://images.pexels.com/photos/2224/road-people-street-smartphone.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500');
     background-size: cover;
+    box-shadow:  20px 20px 60px #c1c1c1,
+             -20px -20px 60px #ffffff;
     margin-top: 10vw;
     margin-left: 25vw;
 }
@@ -261,6 +263,17 @@ body{
     position: absolute;
     margin-top: -2.5vw;
     margin-left: 10vw;
+}
+.img-quote-1{
+    margin-left: 25vw;
+    padding:10px;
+    position: absolute;
+}
+.img-quote-2{
+    margin-left: 7.5vw;
+    margin-top: 20vw;
+    position: absolute;
+    padding:10px;
 }
 .circle-mail{
     position: absolute;
@@ -487,3 +500,178 @@ body{
 .swiper-container{
     height: 50vw;
 }
+@media only screen and (max-width:600px) {
+    .navbar-nav{
+        margin-left: 5vw;
+        margin-top: 5vw;
+        padding-bottom: 5vw;
+    }
+    .model-div .fa{
+        font-size: 36px !important;
+    }
+    .model-div h2{
+        font-size: 7.5vw;
+    }
+    .model-div h4{
+        font-size: 5vw;
+    }
+    .img-div{
+        display: none;
+    }
+    .circle{
+        display: none;
+    }
+    .circle-cont{
+        height: 30vw;
+        width: 30vw;
+        position: absolute;
+        margin-left: 75vw;
+        margin-top: 35vw;
+    }
+    .landing-div{
+        padding-bottom: 15vw;
+    }
+    .landing-div .landing-div-header h4{
+        font-size: 2.5vw;
+    }
+    .landing-div .btn{
+        margin-top: 47.5vw;
+        height: 12.5vw;
+        width: 50%;
+        font-size: 18px;
+    }
+    .about-div .col-sm-7{
+        margin-top: 85vw;
+        margin-left: -2.5vw;
+    }
+    .about-div .col-sm-7 h4{
+        font-size: 2.5vw;
+    }
+    .about-div .col-sm-7 h2{
+        font-size: 5vw;
+        margin-bottom: 5vw;
+    }
+    .about-div .col-sm-7 p,
+    .about-div .col-sm-7 ul{
+        font-size: 3.5vw;
+    }
+    .about-div .col-sm-7 ul li{
+        margin-left: 5vw;
+    }
+    .about-div .col-sm-7 .btn{
+        height: 12.5vw;
+        width: 50%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .user-rate-div h2{
+        font-size: 5vw;
+    }
+    .user-rate-div h4{
+        font-size: 2.5vw;
+    }
+    .user-rate-div p{
+        font-size: 3vw;
+    }
+    .swiper-container{
+        height: 100vw;
+    }
+    .user-card{
+        width: 50vw !important;
+        height: 75vw !important;
+        margin-left: 50vw !important;
+    }
+    .mail-div .col-sm-6:nth-child(1){
+        display: none;
+    }
+    .mail-div .col-sm-6:nth-child(2){
+        margin-top: 25vw;
+    }
+    .mail-div .col-sm-6:nth-child(2) h2{
+        font-size: 5vw;
+        margin-left: 2.5vw;
+    }
+    .mail-div .col-sm-6:nth-child(2) h4{
+        font-size: 2.5vw;
+        margin-left: 2.5vw;
+    }
+    .mail-div .col-sm-6:nth-child(2) p{
+        font-size: 3.5vw;
+        margin-left: 3vw;
+    }
+    .mail-div .input {
+        margin-top: 5vw;
+        font-size: 3.5vw;
+        margin-left: 7.5vw;
+    }
+    .mail-div .btn{
+        margin-top: 3vw;
+        margin-left: 39.5vw;
+        width: 25vw;
+        height: 10vw;
+        font-size: 3.5vw;
+    }
+    .footer-div{
+        height: 240vw;
+    }
+    .footer-div .btn{
+        height: 15vw;
+    }
+    .footer-div .circle-foot-container{
+        display: none;
+    }
+    .footer-div .col-sm-2{
+        margin-top: 10vw;
+    }
+    .footer-div .col-sm-4{
+        margin-left: 5vw ;
+    }
+    .footer-div .contact-1,
+    .footer-div .footer-nav{
+        position: relative;
+    }
+    .footer-div .contact-1{
+        margin-top: 25vw;
+    }
+    .footer-div .footer-nav{
+        margin-top: 30vw;
+    }
+    .footer-div hr{
+        margin-top: 50vw;
+    }
+    .footer-div .icon-social{
+        padding-bottom: 5vw;
+    }
+    .footer-div .icon-social .social{
+        margin-left: 65vw;
+    }
+    .footer-div .icon-social .social .fab,
+    .footer-div .icon-social .social .fa{
+        font-size: 3.5vw !important;
+    }
+    .footer-div .col-sm-2 p{
+        font-size: 3.5vw;
+        padding-left: 5vw !important;
+        line-height: 5vw !important;
+    }
+    .footer-div .col-sm-2 h4{
+        margin-left: -75vw !important;
+    }
+    .img-div-1{
+        width: 30vw !important;
+        height: 30vw !important;
+    }
+    .img-div-2{
+        width: 40vw !important;
+        height: 40vw !important;
+        margin-left: 50vw !important;
+        margin-top: 30vw !important;
+    }
+    .img-quote-1{
+        margin-left: 42.5vw;
+    }
+    .img-quote-2{
+        margin-top: 40vw;
+        margin-left: 2.5vw;
+    }
+} 
