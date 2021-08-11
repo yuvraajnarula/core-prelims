@@ -6,9 +6,10 @@
     box-sizing: border-box;
 }
 body{
-    background: #eee !important;
+    background: #fff !important;
     font-family: 'Noto Sans JP', sans-serif !important;
     color: #A3A5B5;
+    overflow-x: hidden;
 }
 .navbar-div .navbar{
     padding-top:5vw;
@@ -44,7 +45,7 @@ body{
     margin-top:25vw;
     margin-left: 1.5vw;
     position: absolute;
-    color: #eee !important;
+    color: #fff !important;
     background-color: #5383E7;
     font-weight: 400;
     font-size: 1.5vw;
@@ -72,6 +73,11 @@ body{
     padding: 0.25vw;
     background: #12143F;
     margin-top:1.5vw;
+
+
+
+
+
     margin-left:1.5vw;
     border-radius: 100%;
 }
@@ -173,7 +179,7 @@ body{
 {
     width: 10vw;
     background: #5383E7;
-    color: #eee;
+    color: #fff;
     border-radius: 10vw;
     height: 4.5vw;
     font-size: 1.5vw;
@@ -244,6 +250,7 @@ body{
 }
 .mail-div p{
     margin-top: 2vw;
+    margin-bottom: 2.5vw;
 }
 .mail-img-div{
     width: 35vw;
@@ -260,8 +267,152 @@ body{
     height: 15vw;
     width: 15vw;
     background: #A1B9EA;
-    margin-top: 30vw;
+    margin-top: 32.5vw;
     border-radius: 100%;
     z-index: -1;
-    margin-left: 35vw;
+    margin-left: 32.5vw;
+}
+.circle-mail-1{
+    position: absolute;
+    height: 30vw;
+    width: 30vw;
+    background: #5383E7;
+    margin-top: -10vw;
+    border-radius: 100%;
+    z-index: -1;
+    margin-left: 2.5vw;
+}
+.mail-div .input {
+    position: absolute;
+    height: 5vw;
+    width: 32.5vw;
+    color: #A3A5B5;
+    background: transparent;
+    border:none;
+}
+.mail-div .btn{
+    background:#5383E7;
+    padding: 10px;
+    border-radius: 10px;
+    color: #eee;
+    position: absolute;
+    width: 10vw;
+    height: 4.5vw;
+    margin-top:0.25vw;
+    margin-left: 22vw;
+}
+.input:focus{
+    outline: none;
+}
+.swiper-container {
+    margin-top: 10vw;
+}
+.swiper-button-prev,
+.swiper-button-next{
+    font-weight: 700 !important;
+    color: #A3A5B5 !important;
+    position: absolute;
+    margin-top: -45vw !important;
+}
+.swiper-button-prev{
+    margin-left: 50vw;
+}
+.swiper-button-next{
+    margin-left: 5vw;
+}
+.footer-div{
+    background: #F6F8FA;
+    margin-top: 35vw;
+    height: 65vw;
+}
+.footer-div h2{
+    text-align: center;
+    color: #12143F;
+    padding-top: 5vw;
+    font-weight: 800;
+}
+.footer-div .btn{
+    margin-top: 3.5vw;
+    height: 5vw;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+.footer-div .btn:hover{
+    transform: translateY(-5px);
+}
+.footer-div .btn:nth-child(1){
+    background: #5383E7;
+    color: #eee;
+}
+.footer-div .btn:nth-child(2){
+    margin-left: 1.5vw;
+    border: 2px solid #5383E7;
+    color: #5383E7;
+}
+.footer-div h4{
+    color :#12143F;
+    letter-spacing: 1.5px;   
+    font-weight: 700;
+}
+.footer-div .row{
+    margin-top: 15vw;
+}
+.footer-div p{
+    line-height: 2vw;
+    margin-top:2.5vw;
+    margin-left: 5.5vw;
+    position: absolute;
+}
+.footer-div h5{
+    color: #12143F;
+    font-weight: 700;
+}
+.footer-div .contact-1{
+    position: absolute;
+    margin-left: 65vw;
+    margin-top: 0.5vw;
+}
+.footer-div .footer-nav{
+    position: absolute;
+    margin-top: 0.5vw;
+    margin-left: 80vw;
+}
+.footer-div .footer-nav .contact-ul,
+.footer-div .contact-1 .contact-ul{
+    list-style-type: none;
+    margin-top: 1vw;
+    margin-left: -2.5vw;
+    position: absolute;
+}
+.footer-div .footer-nav .contact-ul li,
+.footer-div .contact-1 .contact-ul li{
+    margin-top: 1vw;
+}
+.footer-div hr{
+    width: 85%;
+    margin-top: 15vw;
+    color: #6f7079;
+}
+.footer-div .social{
+    position: absolute;
+    margin-left: 75vw;
+    color: #12143F;
+    list-style: none;
+    display: flex;
+}
+.footer-div .icon-social{
+    position: absolute;
+    margin-top: -10vw;
+}
+.footer-div .social li{
+    margin-left: 1.5vw;
+    font-size: 2vw;
+    cursor: pointer;
+    padding: 10px;
+}
+.footer-div .social li i{
+    margin-left: .35vw;
+}
+.footer-div .social-div{
+    margin-left: 5vw;
 }
