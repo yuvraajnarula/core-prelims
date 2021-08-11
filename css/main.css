@@ -309,16 +309,19 @@ body{
 }
 .swiper-button-prev,
 .swiper-button-next{
-    font-weight: 700 !important;
+    font-weight: 100 !important;
     color: #A3A5B5 !important;
     position: absolute;
-    margin-top: -45vw !important;
+    margin-top: -25vw !important;
+}
+.swiper-wrapper{
+    padding-top:10vw;
 }
 .swiper-button-prev{
-    margin-left: 50vw;
+    margin-left: 75vw !important;
 }
 .swiper-button-next{
-    margin-left: 5vw;
+    margin-right: 12.5vw !important;
 }
 .footer-div{
     background: #F6F8FA;
@@ -415,4 +418,72 @@ body{
 }
 .footer-div .social-div{
     margin-left: 5vw;
+}
+.circle-foot{
+    background: #5383E7;
+    margin-left: 1vw;
+    margin-bottom: 1vw;
+    border-radius: 100%;
+    width: 0.1vw;
+    height:0.1vw;
+    padding:10px;
+}
+.circle-foot-container{
+    height: 20vw;
+    width: 22.5vw;
+    transform: scale(0.5);
+    position: absolute;
+    margin-left: 85vw;
+    margin-top: -50vw !important;
+    animation: rotate 1.5s infinite ease;
+    transition: all .2s ease;
+}
+@keyframes rotate {
+    0%,100%{
+        transform:  translateY(0)  scale(0.5);
+    }
+    50%{
+        transform: translateY(-5px)  scale(0.5);
+        opacity: 0.8;
+    }
+}
+.user-card{
+    width: 30vw;
+    height: 35vw;
+    margin-right: 5vw;
+    border: none;
+    border-radius: 2.5vw;
+    background: #eee;
+    backdrop-filter: saturation(100%) blur(10px);
+}
+.user-card h2{
+    font-size: 2.5vw;
+    font-weight: 500;
+    position: absolute;
+    margin-top: 3.2vw;
+    margin-left:  9.5vw;
+}
+.user-card h5{
+    margin-left: 10vw;
+    margin-top: 6.5vw;
+    font-size:1vw;
+    position: absolute;
+}
+.user-card .star-div{
+    margin-top: 5vw;
+    margin-left: 3.5vw;
+    color: #fddc1d;
+}
+.user-card p{
+    margin-top: 2.5vw;
+    margin-left: 3.5vw;
+}
+.user-card span{
+    color: #12143F;
+}
+.user-card i{
+    margin-left: 5px;
+}
+.swiper-container{
+    height: 50vw;
 }

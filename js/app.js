@@ -74,83 +74,101 @@ input.addEventListener('click',()=>{
     input.style.color = '#12143F';
 })
 //slider
+const sliderCircle = document.createElement('div');
+sliderCircle.classList.add('circle-slide');
+document.querySelector('.user-rate-div').appendChild(sliderCircle);
 const swiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
-    loop: true,
-    slidesPerView: 3,
-    // If we need pagination
+
     pagination: {
       el: '.swiper-pagination',
+      clickable: true,
     },
     autoplay: {
         delay: 2500,
         disableOnInteraction: false,
     },
-    // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+
     },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
+    slidesPerView:3,
+    spaceBetween: 30,
+    centeredSlides: true,
+
   });
 
   userData = [
     {
-        name : 'Jethalal Gada',
-        img  : 'https://static.abplive.com/wp-content/uploads/sites/2/2020/07/27140156/jethalal.jpg?impolicy=abp_images&imwidth=720',
+        name : 'Chris Jeffer',
+        img  : 'https://cdn.dribbble.com/users/78251/screenshots/10841565/media/e02eae0abb3e327d5d0f57c6b349eb2b.png?compress=1&resize=400x300',
         review :      
         `
         Lorem ipsum dolor sit amet consectetur adipisicing <br>
         elit. Perferendis impedit dolores natus hic, optio rem
         `,
-        star : `<i class="fas fa-star"></i> <i class="far fa-star"></i>`
+        star : `<i class="fas fa-star"></i><i class="fas fa-star"></i> <i class="fas fa-star"></i>  <i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>`,
+        occupation : 'Shopkeeper'
     },
     {
-        name : 'Krishnan Iyer',
-        img  : 'https://biographymafia.com/wp-content/uploads/2021/04/YASH_22-1.jpg',
+        name : 'Pauline Blue',
+        img  : ' https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLsfK-_d3VshB0F2H_pOgJYPGHfvrVXAKZXKUtJLNQR-KOrDvJQ2eBmaHdgRbrOSCttHk&usqp=CAU',
         review :      
         `
         Lorem ipsum dolor sit amet consectetur adipisicing <br>
         elit. Perferendis impedit dolores natus hic, optio rem
         `,
-        star : `<i class="fas fa-star"></i> <i class="fas fa-star"></i><i class="fas fa-star"></i> <i class="far fa-star"></i>`
+        star : `<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>`,
+        occupation : 'Scientist'
     },
     {
-        name : 'Tarak Mehta',
-        img  : 'https://images.jansatta.com/2020/09/Shailesh-Lodha.jpg',
+        name : 'Tom Andrews',
+        img  : 'https://i.pinimg.com/736x/68/16/3e/68163efb3c2201721d8e681cde6aef2b.jpg',
         review :      
         `
         Lorem ipsum dolor sit amet consectetur adipisicing <br>
         elit. Perferendis impedit dolores natus hic, optio rem
         `,
-        star : `<i class="fas fa-star"></i> <i class="far fa-star"></i>`
+        star : `<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>`,
+        occupation: 'Writer'
     },
     {
-        name : 'Sundar Lal',
-        img  : 'https://www.pinkvilla.com/files/styles/amp_metadata_content_image/public/taarak_mehta_ka_ooltah_chashmah_disha_vakanis_onscreen_real_brother_mayur_vakani_extends_rakhi_wishes.jpg',
+        name : 'Nathaline Smith',
+        img  : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn22JI-p42tWtr24yyGfRxA1E2lDY_yihhEQ&usqp=CAU',
         review :      
         `
         Lorem ipsum dolor sit amet consectetur adipisicing <br>
         elit. Perferendis impedit dolores natus hic, optio rem
         `,
-        star : `<i class="fas fa-star"></i> <i class="far fa-star"></i>`
+        star : `<i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i>`,
+        occupation: 'Freelancer'
     }
 ]
 for (var user = 0; user <userData.length; user++){
     const userSlide = document.createElement('div');
     userSlide.classList.add('swiper-slide');
     userSlide.innerHTML = `
-    <img src='${userData[user].img}'>
-    <h2>${userData[user].name}</h2>
-    <p>${userData[user].review}</p>
-    <div class='star-div'>
-        ${userData[user].star}
+    <div class='user-card card'>
+        <div style="background: url('${userData[user].img}'); border-radius:100%; width: 5vw;height:5vw; background-size: cover; margin-left:3vw; margin-top:2.5vw; "></div>
+        <h2>${userData[user].name}</h2>
+        <h5>${userData[user].occupation}</h5>
+        <p>${userData[user].review}</p>
+        <div class='star-div'>
+          <span> Rating : </span>  ${userData[user].star}
+        </div>
     </div>
     `;
     document.querySelector('.swiper-wrapper').appendChild(userSlide);
 }
+//footer
+const circleCont = document.createElement('div');
+circleCont.classList.add('circle-foot-container');
+for (var foot = 0; foot < 64; foot++){
+    const circleFoot = document.createElement('div');
+    circleFoot.classList.add('circle-foot');
+    circleCont.appendChild(circleFoot);
+}
+circleCont.classList.add('row');
+document.querySelector('.footer-div').appendChild(circleCont);
