@@ -68,7 +68,7 @@ body{
     width: 35vw;
     position: absolute;
     margin-top: -10vw;
-    margin-left: -2.5vw;
+    margin-left: 4vw;
 }
 .circle{
     width: 0.5px;
@@ -83,7 +83,7 @@ body{
     animation: move-up 2s infinite ease;
     transition: all 2s ease;
     position: absolute;
-    margin-left: -9.5vw;
+    margin-left: -3.5vw;
     margin-top:-15vw;
     z-index: -2;
     width: 17.5vw;
@@ -102,7 +102,7 @@ body{
     width: 15vw;
     z-index: -2;
     margin-top:30vw;
-    margin-left: 25vw;
+    margin-left: 27.5vw;
     padding:10px;
     border-radius: 100%;
     background:#A1B9EA;
@@ -234,7 +234,7 @@ body{
     margin-top: 2.5vw;
 }
 .mail-div{
-    margin-top: 30vw;
+    margin-top: 20vw;
 }
 .mail-div .col-sm-6:nth-child(2){
     margin-top: 7.5vw;
@@ -300,19 +300,23 @@ body{
     height: 5vw;
     width: 32.5vw;
     color: #A3A5B5;
-    background: transparent;
+    background: #eee;
+    backdrop-filter: saturation(100%) blur(10px);
     border:none;
+    padding: 10px;
+    padding-left: 2.5vw;
+    border-radius: 2.5vw;
 }
 .mail-div .btn{
     background:#5383E7;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 2.5vw;
     color: #eee;
     position: absolute;
     width: 10vw;
     height: 4.5vw;
-    margin-top:0.25vw;
-    margin-left: 22vw;
+    margin-top:0.2vw;
+    margin-left: 22.5vw;
 }
 .input:focus{
     outline: none;
@@ -485,7 +489,7 @@ body{
 .user-card .star-div{
     margin-top: 5vw;
     margin-left: 3.5vw;
-    color: #fddc1d;
+    color: #f0ec20;
 }
 .user-card p{
     margin-top: 2.5vw;
@@ -499,6 +503,17 @@ body{
 }
 .swiper-container{
     height: 50vw;
+}
+.slider-div .row{
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    display: none;
+}
+.row .user-card{
+    margin-top: 5vw;
+}
+.modal-cont{
+    display: none;
 }
 @media only screen and (max-width:600px) {
     .navbar-nav{
@@ -536,9 +551,9 @@ body{
     }
     .landing-div .btn{
         margin-top: 47.5vw;
-        height: 12.5vw;
+        height: 8.5vw;
         width: 50%;
-        font-size: 18px;
+        font-size: 3.5vw;
     }
     .about-div .col-sm-7{
         margin-top: 85vw;
@@ -559,10 +574,9 @@ body{
         margin-left: 5vw;
     }
     .about-div .col-sm-7 .btn{
-        height: 12.5vw;
+        height: 8.5vw;
         width: 50%;
-        font-size: 18px;
-        padding: 10px;
+        font-size: 3.5vw;
     }
     .user-rate-div h2{
         font-size: 5vw;
@@ -601,13 +615,15 @@ body{
         margin-left: 3vw;
     }
     .mail-div .input {
-        margin-top: 5vw;
+        margin-top: 2.5vw;
         font-size: 3.5vw;
         margin-left: 7.5vw;
+        height: 10vw;
+        width: 50%;
     }
     .mail-div .btn{
-        margin-top: 3vw;
-        margin-left: 39.5vw;
+        margin-top: 2.5vw;
+        margin-left: 60vw;
         width: 25vw;
         height: 10vw;
         font-size: 3.5vw;
@@ -674,5 +690,37 @@ body{
     .img-quote-2{
         margin-top: 40vw;
         margin-left: 2.5vw;
+    }
+    .swiper-container{
+        display: none;
+    }
+    .slider-div .row{
+        display: block;
+        margin-left: -50vw;
+        margin-top: 15vw;
+    }
+    .slider-div .row .user-card{
+        width: 80vw !important;
+        height: 75vw !important;
+    }
+    .slider-div .row .user-card .user-img{
+        width: 20vw !important;
+        height: 20vw !important;
+    }
+    .slider-div .row .user-card h2{
+        font-size: 6.5vw;
+        margin-left: 25vw;
+        margin-top: 5vw;
+    }
+    .slider-div .row .user-card h5{
+        font-size: 3.5vw;
+        margin-left: 27.5vw;
+        margin-top: 15vw;
+    }
+    .slider-div .row .user-card p{
+        margin-top: 15vw;   
+    }
+    .slider-div .row .user-card .star-div{
+        margin-top: 2.5vw !important;
     }
 } 

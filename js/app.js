@@ -41,20 +41,20 @@ aboutImageContainer.appendChild(aboutImageDiv1);
 aboutImageContainer.appendChild(aboutImageDiv2);
 const circleAbout1 = document.createElement('div');
 const circleAbout2 = document.createElement('div');
-for (var j = 0; j < 21; j++){
+circleAbout1.classList.add('circle-about-1');
+circleAbout2.classList.add('circle-about-2');
+for (var j = 0; j < 49; j++){
     const circleDiv = document.createElement('div');
     circleDiv.classList.add('circle-1')
     circleAbout1.appendChild(circleDiv);
 }
-for (var j = 0; j < 21; j++){
+for (var j = 0; j < 36; j++){
     const circleDiv = document.createElement('div');
     circleDiv.classList.add('circle-2')
     circleAbout2.appendChild(circleDiv);
 }
-circleAbout1.classList.add('circle-about-1');
-circleAbout2.classList.add('circle-about-2');
-aboutContainer.appendChild(circleAbout1);
-aboutContainer.appendChild(circleAbout2);
+document.querySelector('.col-sm-5').appendChild(circleAbout1);
+document.querySelector('.col-sm-5').appendChild(circleAbout2);
 aboutContainer.appendChild(aboutImageContainer);
 //mail div
 const mailDiv = document.querySelector('.img-mail-div');
@@ -162,6 +162,25 @@ for (var user = 0; user <userData.length; user++){
     `;
     document.querySelector('.swiper-wrapper').appendChild(userSlide);
 }
+const row = document.createElement('div');
+row.classList.add('row');
+for (var rowCard = 0; rowCard < userData.length; rowCard++){
+    const rowCardElement = document.createElement('div');
+    rowCardElement.classList.add('col-sm-4');
+    rowCardElement.innerHTML = `
+    <div class='user-card card'>
+    <div class='user-img' style="background: url('${userData[rowCard].img}'); border-radius:100%; width: 5vw;height:5vw; background-size: cover; margin-left:3vw; margin-top:2.5vw; "></div>
+    <h2>${userData[rowCard].name}</h2>
+    <h5>${userData[rowCard].occupation}</h5>
+    <p>${userData[rowCard].review}</p>
+    <div class='star-div'>
+      <span> Rating : </span>  ${userData[rowCard].star}
+    </div>
+</div>
+    `;
+    row.appendChild(rowCardElement);
+}
+document.querySelector('.slider-div').appendChild(row);
 //footer
 const circleCont = document.createElement('div');
 circleCont.classList.add('circle-foot-container');
@@ -172,3 +191,27 @@ for (var foot = 0; foot < 64; foot++){
 }
 circleCont.classList.add('row');
 document.querySelector('.footer-div').appendChild(circleCont);
+const freeRide = document.querySelector('.ride');
+const modal = document.createElement('div');
+modal.classList.add('modal-cont');
+const modalContent = document.createElement('div');
+modalContent.innerHTML = `
+    <div class="modal-div">
+    <form>
+        <label>Name : </label>
+        <input></input>
+        <label>Age : </label>
+        <input></input>
+        <label>Address : </label>
+        <input></input>
+        <label>License No. : </label>
+        <input></input>
+        <button class='btn'></button>
+    </form>
+    </div>
+`;
+modal.appendChild(modalContent);
+document.querySelector('.footer-div').appendChild(modal);
+freeRide.addEventListener('click', ()=>{
+
+})
