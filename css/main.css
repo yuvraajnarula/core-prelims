@@ -198,7 +198,7 @@ body{
     background-size: cover;
     box-shadow:  20px 20px 60px #c1c1c1,
              -20px -20px 60px #ffffff;
-    margin-left: 5vw;
+    margin-left: 7.5vw;
     margin-top: -5vw;
 }
 .about-div .img-div-2{
@@ -217,20 +217,20 @@ body{
     margin-top: 30vw;
 }
 .user-rate-div h2{
-    margin-left: 5vw;
-    margin-top: 15vw;
+    margin-left: 7.5vw;
+    margin-top: 17.5vw;
     color: #12143F;
     font-size: 3.5vw;
     font-weight: 700;
 }
 .user-rate-div h4{
     color: #5383E7;
-    margin-left: 5vw;
+    margin-left: 7.5vw;
     margin-top: -2.5vw;
     position: absolute;
 }
 .user-rate-div p{
-    margin-left: 5.5vw;
+    margin-left: 8vw;
     margin-top: 2.5vw;
 }
 .mail-div{
@@ -262,10 +262,10 @@ body{
     background-size: cover;
     position: absolute;
     margin-top: -2.5vw;
-    margin-left: 10vw;
+    margin-left: 12.5vw;
 }
 .img-quote-1{
-    margin-left: 25vw;
+    margin-left: 27.5vw;
     padding:10px;
     position: absolute;
 }
@@ -283,7 +283,7 @@ body{
     margin-top: 32.5vw;
     border-radius: 100%;
     z-index: -1;
-    margin-left: 32.5vw;
+    margin-left: 35vw;
 }
 .circle-mail-1{
     position: absolute;
@@ -293,7 +293,7 @@ body{
     margin-top: -10vw;
     border-radius: 100%;
     z-index: -1;
-    margin-left: 2.5vw;
+    margin-left: 7.5vw;
 }
 .mail-div .input {
     position: absolute;
@@ -353,7 +353,7 @@ body{
 }
 .footer-div .btn{
     margin-top: 3.5vw;
-    height: 5vw;
+    height: 3vw;
     border-radius: 10px;
     transition: all 0.5s ease;
 }
