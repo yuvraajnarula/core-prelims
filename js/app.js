@@ -39,22 +39,6 @@ const aboutImageContainer = document.createElement('div');
 aboutImageContainer.classList.add('about-img-cont');
 aboutImageContainer.appendChild(aboutImageDiv1);
 aboutImageContainer.appendChild(aboutImageDiv2);
-const circleAbout1 = document.createElement('div');
-const circleAbout2 = document.createElement('div');
-circleAbout1.classList.add('circle-about-1');
-circleAbout2.classList.add('circle-about-2');
-for (var j = 0; j < 49; j++){
-    const circleDiv = document.createElement('div');
-    circleDiv.classList.add('circle-1')
-    circleAbout1.appendChild(circleDiv);
-}
-for (var j = 0; j < 36; j++){
-    const circleDiv = document.createElement('div');
-    circleDiv.classList.add('circle-2')
-    circleAbout2.appendChild(circleDiv);
-}
-document.querySelector('.col-sm-5').appendChild(circleAbout1);
-document.querySelector('.col-sm-5').appendChild(circleAbout2);
 aboutContainer.appendChild(aboutImageContainer);
 //mail div
 const mailDiv = document.querySelector('.img-mail-div');
@@ -69,7 +53,6 @@ mailDiv.appendChild(circleMail);
 mailDiv.appendChild(CircleMail);
 const input = document.querySelector('.input');
 input.addEventListener('click',()=>{
-    input.value = '';
     input.style.paddingLeft = '2.5vw';
     input.style.color = '#12143F';
 })
@@ -192,26 +175,32 @@ for (var foot = 0; foot < 64; foot++){
 circleCont.classList.add('row');
 document.querySelector('.footer-div').appendChild(circleCont);
 const freeRide = document.querySelector('.ride');
-const modal = document.createElement('div');
-modal.classList.add('modal-cont');
-const modalContent = document.createElement('div');
-modalContent.innerHTML = `
-    <div class="modal-div">
-    <form>
-        <label>Name : </label>
-        <input></input>
-        <label>Age : </label>
-        <input></input>
-        <label>Address : </label>
-        <input></input>
-        <label>License No. : </label>
-        <input></input>
-        <button class='btn'></button>
-    </form>
-    </div>
-`;
-modal.appendChild(modalContent);
-document.querySelector('.footer-div').appendChild(modal);
-freeRide.addEventListener('click', ()=>{
-
+freeRide.addEventListener('click',()=>{
+    alert('ISsue')
 })
+const inputSubscribe = document.querySelector('.input');
+const subscribeBtn = document.querySelector('.sub');
+inputSubscribe.addEventListener('keydown', ()=>{
+    storeEmail = $('.input').val();
+})
+subscribeBtn.addEventListener('click',()=>{
+    console.log(storeEmail);
+    emailSubs();
+})
+function emailSubs(){
+    Email.send({
+        SecureToken : "dfcac39a-abfd-495e-a794-fce4e53077b3",
+        To: `${storeEmail}`,
+        From: "ynarula678@gmail.com",
+        Subject: "Subscibed Successfully",
+        Body: `
+            Dear User,
+                Your email "${storeEmail}" was used for subscribing our newsletter. We would be sending updates every weekend.
+            Regards,
+            RSS Motor
+        `,
+      })
+        .then(function (message) {
+          alert("mail sent successfully")
+        });
+}

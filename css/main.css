@@ -12,11 +12,12 @@ body{
     overflow-x: hidden;
 }
 .navbar-div .navbar{
-    padding-top:5vw;
+    padding-top:3.5vw;
     padding-left: 5vw;
 }
 .navbar-nav{
     margin-left: 65vw;
+    font-size: 1.5vw;
 }
 .landing-div {
     margin-top: 12.5vw;
@@ -520,6 +521,7 @@ body{
         margin-left: 5vw;
         margin-top: 5vw;
         padding-bottom: 5vw;
+        font-size: 5vw;
     }
     .model-div .fa{
         font-size: 36px !important;
@@ -600,7 +602,7 @@ body{
     }
     .mail-div .col-sm-6:nth-child(2){
         margin-top: 25vw;
-        margin-left: 2.5vw;
+        margin-left: 3.5vw;
     }
     .mail-div .col-sm-6:nth-child(2) h2{
         font-size: 5vw;
